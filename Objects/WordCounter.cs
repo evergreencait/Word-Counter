@@ -39,24 +39,29 @@ namespace WordCounterApp.Objects
       {
         _allInputs.Add("Your word was not in the sentence");
       }
-        return _allInputs;
-      }
+      return _allInputs;
+    }
 
-      public List<int> CountRepeats()
+    public int CountRepeats()
+    {
+      _score = 0;
+      string[] words = _phraseInput.Split(' ');
+      string[] inputwords = _wordInput.Split(' ');
+      for (int i = 0; i <= words.Length-1; i++)
       {
-        _score = 0;
-        string[] words = _phraseInput.Split(' ');
-        foreach(string word in words)
+        for (int j = 0; j <= inputwords.Length-1; j++)
         {
-          if (word == _wordInput)
+          if (i == j)
           {
             _score +=1;
+
           }
           else
           {
             _score +=0;
           }
         }
+      }
         return _score;
       }
     }

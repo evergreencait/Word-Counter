@@ -18,8 +18,8 @@ namespace WordCounterApp.Objects
     [Fact]
     public void RepeatCounter_ReturnIfMatch_MatchConfirmation()
     {
-      RepeatCounter testRepeatCounter = new RepeatCounter("dog", "dog");
-      List<string> expected = new List<string>{"dog", "Your word was in the sentence"};
+      RepeatCounter testRepeatCounter = new RepeatCounter("rabbit", "rabbit");
+      List<string> expected = new List<string>{"rabbit", "Your word was in the sentence"};
       List<string> output = testRepeatCounter.ReturnSentence();
       Assert.Equal(expected, output);
     }
@@ -27,9 +27,9 @@ namespace WordCounterApp.Objects
     [Fact]
     public void RepeatCounter_ReturnScore_Score()
     {
-      RepeatCounter testRepeatCounter = new RepeatCounter("dog", "I have a dog");
-      List<string> expected = new List<string> {"dog", 1};
-      List<string> output = testRepeatCounter.CountRepeats();
+      RepeatCounter testRepeatCounter = new RepeatCounter("This is my dog", "dog");
+      int expected = 1;
+      int output = testRepeatCounter.CountRepeats();
       Assert.Equal(expected, output);
     }
   }
