@@ -7,12 +7,10 @@ namespace WordCountApp
   public class RepeatCounter
   {
     private string _wordInput;
-    private string _sentenceInput;
 
-    public RepeatCounter (string wordInput, string sentenceInput)
+    public RepeatCounter (string wordInput)
     {
       _wordInput = wordInput;
-      _sentenceInput = sentenceInput;
     }
 
     public string GetWord()
