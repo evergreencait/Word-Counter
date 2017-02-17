@@ -9,18 +9,20 @@ namespace WordCounterApp.Objects
     private string _phraseInput;
     private string _wordInput;
     private int _score;
+    private string _wordLower;
     private List<string> _allInputs = new List<string>();
 
     public RepeatCounter (string phraseInput, string wordInput)
     {
       _phraseInput = phraseInput;
       _wordInput = wordInput;
+      _wordLower = _wordInput.ToLower();
     }
 
     public List<string> GetAllInputs()
     {
       _allInputs.Add(_phraseInput);
-      _allInputs.Add(_wordInput);
+      _allInputs.Add(_wordLower);
       return _allInputs;
     }
 
@@ -29,9 +31,9 @@ namespace WordCounterApp.Objects
       string[] words = _phraseInput.Split(' ');
       foreach(string word in words)
       {
-        if (word == _wordInput)
+        if (word == _wordLower)
         {
-          _allInputs.Add(_wordInput);
+          _allInputs.Add(_wordLower);
           _allInputs.Add("Your word was in the sentence");
         }
       }
@@ -46,7 +48,7 @@ namespace WordCounterApp.Objects
     {
       _score = 0;
       string[] words = _phraseInput.Split(' ');
-      string[] inputwords = _wordInput.Split(' ');
+      string[] inputwords = _wordLower.Split(' ');
       for (int i = 0; i <= words.Length-1; i++)
       {
         for (int j = 0; j <= inputwords.Length-1; j++)

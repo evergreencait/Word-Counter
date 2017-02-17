@@ -32,5 +32,14 @@ namespace WordCounterApp.Objects
       int output = testRepeatCounter.CountRepeats();
       Assert.Equal(expected, output);
     }
+
+    [Fact]
+  public void RepeatCounter_ReturnCaseInsensitive_Score()
+  {
+    RepeatCounter testRepeatCounter = new RepeatCounter("This is my dog", "Dog");
+    int expected = 1;
+    int output = testRepeatCounter.CountRepeats();
+    Assert.Equal(expected, output);
+  }
   }
 }
