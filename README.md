@@ -6,13 +6,19 @@
 
 ## Description
 
-_This application will allow a user to enter a word and a list of words. The program will then compare the original word with the list and output words that match._
+_This application will allow a user to enter a word and a sentence. The program will then compare the original word with the sentence and output how often the word appears in the sentence._
 
 ## Specifications
 
-#### .
-*
-*
+#### Program will identify whether or not the given word appears in the sentence and return the number 1.
+* Input: "cat", "cat in the hat"
+* Output : 1
+
+#### Program will identify the amount of times a word appears in the sentence and return that amount.
+* Input: "dog", "My dog is in her dog house"
+* Output : 2
+
+
 
 
 ## Support and contact details
