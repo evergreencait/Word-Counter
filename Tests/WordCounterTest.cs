@@ -1,18 +1,13 @@
 using Xunit;
-using System;
-using System.Collections.Generic;
-
-namespace WordCountApp.Objects
+namespace WordCountApp
 {
-  public class WordCountTest
+  public class WordCountAppTest
   {
     [Fact]
-    public void GetWord_ReturnWord_word()
+    public void RepeatCounter_ReturnWord_wordr()
     {
-      RepeatCounter testRepeatCounter = new RepeatCounter("cat");
-      string expected = "cat";
-      string output = testRepeatCounter.GetWord();
-      Assert.Equal(expected, output);
+      RepeatCounter testRepeatCounter = new RepeatCounter();
+      Assert.Equal("cat", testRepeatCounter.GetWord("cat"));
     }
   }
 }
