@@ -23,5 +23,14 @@ namespace WordCounterApp.Objects
      List<string> output = testRepeatCounter.CountRepeats();
      Assert.Equal(expected, output);
    }
+
+   [Fact]
+  public void RepeatCounter_ReturnScore_Score()
+  {
+    RepeatCounter testRepeatCounter = new RepeatCounter("I have a dog", "dog");
+    List<string> expected = new List<string>{"dog", 1};
+    List<string> output = testRepeatCounter.CountRepeats();
+    Assert.Equal(expected, output);
+  }
   }
 }
