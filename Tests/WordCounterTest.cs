@@ -27,8 +27,8 @@ namespace WordCounterApp.Objects
     [Fact]
     public void RepeatCounter_ReturnScore_Score()
     {
-      RepeatCounter testRepeatCounter = new RepeatCounter("This is my dog", "dog");
-      int expected = 1;
+      RepeatCounter testRepeatCounter = new RepeatCounter("This is my dog and her dog", "dog");
+      int expected = 2;
       int output = testRepeatCounter.CountRepeats();
       Assert.Equal(expected, output);
     }
