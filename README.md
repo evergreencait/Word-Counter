@@ -14,9 +14,9 @@ _This application will allow a user to enter a word and a sentence. The program 
 * Input: "cat"
 * Output : "cat"
 
-#### Program will identify if the given word appears once in the sentence and return 1.
+#### Program will identify if the given word appears once in the sentence.
 * Input: "cat", "cat in the hat"
-* Output : 1
+* Output : Your word appears in the sentence;
 
 #### Program will identify the amount of times a word appears in the sentence and return that amount.
 * Input: "dog", "My dog is in her dog house"
