@@ -41,5 +41,23 @@ namespace WordCounterApp.Objects
       }
         return _allInputs;
       }
+
+      public List<int> CountRepeats()
+      {
+        _score = 0;
+        string[] words = _phraseInput.Split(' ');
+        foreach(string word in words)
+        {
+          if (word == _wordInput)
+          {
+            _score +=1;
+          }
+          else
+          {
+            _score +=0;
+          }
+        }
+        return _score;
+      }
     }
   }
