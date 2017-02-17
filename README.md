@@ -10,15 +10,29 @@ _This application will allow a user to enter a word and a sentence. The program 
 
 ## Specifications
 
-#### Program will identify whether or not the given word appears in the sentence and return the number 1.
+#### Program will identify the inputted word and return the word.
+* Input: "cat"
+* Output : "cat"
+
+#### Program will identify the inputted sentence and return the sentence.
+* Input: "cat in the hat"
+* Output : "cat in the hat"
+
+#### Program will identify the inputted word and return the word in lower case despite case when entered.
+* Input: "Cat"
+* Output : "cat"
+
+#### Program will identify the inputted sentence and return the sentence in lower case despite case when entered.
+* Input: "Cat in the Hat"
+* Output : "cat in the hat"
+
+#### Program will identify if the given word appears once in the sentence and return 1.
 * Input: "cat", "cat in the hat"
 * Output : 1
 
 #### Program will identify the amount of times a word appears in the sentence and return that amount.
 * Input: "dog", "My dog is in her dog house"
 * Output : 2
-
-
 
 
 ## Support and contact details
