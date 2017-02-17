@@ -24,24 +24,22 @@ namespace WordCounterApp.Objects
       return _allInputs;
     }
 
-    public List<int> CountRepeats()
+    public List<string> ReturnSentence()
     {
-      _score = 0;
       string[] words = _phraseInput.Split(' ');
-      foreach (string word in words)
+      foreach(string word in words)
       {
         if (word == _wordInput)
         {
           _allInputs.Add(_wordInput);
           _allInputs.Add("Your word was in the sentence");
-          _score += 1;
         }
-        else
-        {
-          _allInputs.Add("Your word was not in the sentence");
-        }
-        return _score;
+      }
+      if (_allInputs.Count == 0)
+      {
+        _allInputs.Add("Your word was not in the sentence");
+      }
+        return _allInputs;
       }
     }
   }
-}
