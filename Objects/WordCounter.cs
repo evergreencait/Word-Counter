@@ -2,13 +2,19 @@ using Nancy;
 using System;
 using System.Collections.Generic;
 
-namespace WordCountApp
+namespace WordCountApp.Objects
 {
   public class RepeatCounter
   {
-    public string GetWord(string wordInput)
+    private string _wordInput;
+
+    public RepeatCounter (string wordInput)
     {
-      return wordInput;
+      _wordInput = wordInput;
+    }
+    public string GetWord()
+    {
+      return _wordInput;
     }
   }
 }
