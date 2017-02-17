@@ -49,22 +49,17 @@ namespace WordCounterApp.Objects
       _score = 0;
       string[] words = _phraseInput.Split(' ');
       string[] inputwords = _wordLower.Split(' ');
-      for (int i = 0; i <= words.Length-1; i++)
+      for (int i = 0; i <= inputwords.Length-1; i++)
       {
-        for (int j = 0; j <= inputwords.Length-1; j++)
+        for (int j = 0; j <= words.Length-1; j++)
         {
-          if (i == j)
+          if (inputwords[i] == words[j])
           {
-            _score +=1;
-
-          }
-          else
-          {
-            _score +=0;
+            _score += 1;
           }
         }
       }
-        return _score;
-      }
+      return _score;
     }
   }
+}
