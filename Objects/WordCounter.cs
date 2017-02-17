@@ -28,22 +28,19 @@ namespace WordCounterApp.Objects
     {
       _score = 0;
       string[] words = _phraseInput.Split(' ');
-      for (int i = 0; i <= words.Length-1; 1++)
+      foreach (string word in words)
       {
-        for (int j = 0; j <= allInputs.Length-1, 1++)
+        if (words == _wordInput)
         {
-          if (words[i] == allInputs[j])
-          {
-            _allInputs.Add(_wordInput);
-            _allInputs.Add("Your word was in the sentence");
-            _score +=1;
-          }
+          _allInputs.Add(_wordInput);
+          _allInputs.Add("Your word was in the sentence");
+          _score += 1;
         }
-        if (_allInputs.Count == 0)
+        else
         {
           _allInputs.Add("Your word was not in the sentence");
         }
-        return _allInputs;
+        return _score;
       }
     }
   }
