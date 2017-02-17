@@ -24,13 +24,13 @@ namespace WordCounterApp.Objects
       return _allInputs;
     }
 
-    public List<string> CountRepeats()
+    public List<int> CountRepeats()
     {
       _score = 0;
       string[] words = _phraseInput.Split(' ');
       foreach (string word in words)
       {
-        if (words == _wordInput)
+        if (word == _wordInput)
         {
           _allInputs.Add(_wordInput);
           _allInputs.Add("Your word was in the sentence");
