@@ -1,10 +1,11 @@
 .jumbotron {
   background-image: url("http://img.bhs4.com/9D/E/9DE2661A79D6344449FC6E11EAA900F9DB0998AD_large.jpg");
-  height: 600px;
-  font-size: 80px;
+  height: 350px;
+  font-size: 90px;
   font-family: 'Permanent Marker', cursive;
   color: black;
-  text-shadow: 3px 3px gray;
+  text-shadow: 3px 3px teal;
+  border: 20px solid teal;
 }
 
 body {
@@ -13,4 +14,29 @@ body {
 
 .form {
   color: white;
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+}
+
+p {
+  font-family: 'Cabin', sans-serif;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.button {
+  margin-top: 50px;
+}
+
+h2 {
+  margin-bottom: 100px;
+}
+
+a {
+  margin-top: 70px;
+  color: white;
+  font-size: 20px;
 }

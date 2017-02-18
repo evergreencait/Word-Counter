@@ -2,6 +2,7 @@
   Layout="Shared/_Layout.cshtml";
 }
 
+<p>Enter a sentence and a selected word to see how many times it appears in the sentence!<p>
   <form action="/results" method="post">
     <div class="form-group">
       <label for="sentence"><span class="form">Enter your sentence:</span></label>
@@ -11,5 +12,5 @@
       <label for="word"><span class="form">Enter a word you want to count:</span></label>
       <input type="text" name="word" id="word" required>
     </div>
-    <button type="submit" class="btn btn-warning">Find your word count</button>
+    <button type="submit" class="btn btn-warning button">Find your word count</button>
   </form>
