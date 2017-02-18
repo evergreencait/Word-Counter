@@ -44,6 +44,12 @@ _Contact: Caitlin Hines- caitlinhines@me.com_
 
 ## Technologies Used
 
+## Setup/Installation Requirements
+
+* _Clone github repository:https://github.com/Word-Counter
+* _reset server with "gnx kestrel"_
+* _Open webpage on localhost:5004_
+
 _HTML, CSS, Nancy, Razor, C#_
 
 ### License
