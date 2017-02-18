@@ -33,10 +33,15 @@ p {
 
 h2 {
   margin-bottom: 100px;
+  color: #000066;
 }
 
 a {
   margin-top: 70px;
   color: white;
   font-size: 20px;
+}
+
+h3 {
+  color: white;
 }
