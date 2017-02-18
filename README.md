@@ -35,7 +35,7 @@ Once it can identify if it occurs in the sentence, the next step is to see if it
 I chose this as my last spec because it is adding on to the counting method
 -->
 #### Program will identify the inputted word despite case when entered and return correct amount.
-* Input: "cat", "Cat in the hat"
+* Input: "Cat", "cat in the hat"
 * Output : "1"
 
 ## Support and contact details
