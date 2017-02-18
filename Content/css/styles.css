@@ -1,0 +1,16 @@
+.jumbotron {
+  background-image: url("http://img.bhs4.com/9D/E/9DE2661A79D6344449FC6E11EAA900F9DB0998AD_large.jpg");
+  height: 600px;
+  font-size: 80px;
+  font-family: 'Permanent Marker', cursive;
+  color: black;
+  text-shadow: 3px 3px gray;
+}
+
+body {
+ background-color: #754C78;
+}
+
+.form {
+  color: white;
+}
