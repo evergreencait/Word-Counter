@@ -25,6 +25,15 @@ namespace WordCounterApp.Objects
     // }
 
     [Fact]
+    public void CountRepeats_ReturnNone_Score()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("This is my dog", "cat");
+      int expected = 0;
+      int output = testRepeatCounter.CountRepeats();
+      Assert.Equal(expected, output);
+    }
+
+    [Fact]
     public void CountRepeats_ReturnIfOne_Score()
     {
       RepeatCounter testRepeatCounter = new RepeatCounter("This is my dog", "dog");
