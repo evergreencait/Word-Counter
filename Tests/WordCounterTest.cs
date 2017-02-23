@@ -52,12 +52,21 @@ namespace WordCounterApp.Objects
     }
 
     [Fact]
-  public void CountRepeatss_ReturnCaseInsensitive_Score()
-  {
-    RepeatCounter testRepeatCounter = new RepeatCounter("This is my dog", "Dog");
-    int expected = 1;
-    int output = testRepeatCounter.CountRepeats();
-    Assert.Equal(expected, output);
-  }
+    public void CountRepeatss_ReturnCaseInsensitiveInputWord_Score()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("This is my dog", "Dog");
+      int expected = 1;
+      int output = testRepeatCounter.CountRepeats();
+      Assert.Equal(expected, output);
+    }
+
+    [Fact]
+    public void CountRepeatss_ReturnCaseInsensitiveInputSentence_Score()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("This is my Dog", "dog");
+      int expected = 1;
+      int output = testRepeatCounter.CountRepeats();
+      Assert.Equal(expected, output);
+    }
   }
 }

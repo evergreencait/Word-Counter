@@ -10,6 +10,7 @@ namespace WordCounterApp.Objects
     private string _wordInput;
     private int _score;
     private string _wordLower;
+    private string _phraseLower;
     private List<string> _allInputs = new List<string>();
 
     public RepeatCounter (string phraseInput, string wordInput)
@@ -17,11 +18,12 @@ namespace WordCounterApp.Objects
       _phraseInput = phraseInput;
       _wordInput = wordInput;
       _wordLower = _wordInput.ToLower();
+      _phraseLower = _phraseInput.ToLower();
     }
 
     public List<string> GetAllInputs()
     {
-      _allInputs.Add(_phraseInput);
+      _allInputs.Add(_phraseLower);
       _allInputs.Add(_wordLower);
       return _allInputs;
     }
@@ -47,7 +49,7 @@ namespace WordCounterApp.Objects
     public int CountRepeats()
     {
       _score = 0;
-      string[] words = _phraseInput.Split(' ');
+      string[] words = _phraseLower.Split(' ');
       string[] inputwords = _wordLower.Split(' ');
       for (int i = 0; i <= inputwords.Length-1; i++)
       {
