@@ -21,30 +21,30 @@ namespace WordCounterApp.Objects
       _phraseLower = _phraseInput.ToLower();
     }
 
-    public List<string> GetAllInputs()
-    {
-      _allInputs.Add(_phraseLower);
-      _allInputs.Add(_wordLower);
-      return _allInputs;
-    }
-
-    public List<string> ReturnSentence()
-    {
-      string[] words = _phraseInput.Split(' ');
-      foreach(string word in words)
-      {
-        if (word == _wordLower)
-        {
-          _allInputs.Add(_wordLower);
-          _allInputs.Add("Your word was in the sentence");
-        }
-      }
-      if (_allInputs.Count == 0)
-      {
-        _allInputs.Add("Your word was not in the sentence");
-      }
-      return _allInputs;
-    }
+    // public List<string> GetAllInputs()
+    // {
+    //   _allInputs.Add(_phraseLower);
+    //   _allInputs.Add(_wordLower);
+    //   return _allInputs;
+    // }
+    //
+    // public List<string> ReturnSentence()
+    // {
+    //   string[] words = _phraseInput.Split(' ');
+    //   foreach(string word in words)
+    //   {
+    //     if (word == _wordLower)
+    //     {
+    //       _allInputs.Add(_wordLower);
+    //       _allInputs.Add("Your word was in the sentence");
+    //     }
+    //   }
+    //   if (_allInputs.Count == 0)
+    //   {
+    //     _allInputs.Add("Your word was not in the sentence");
+    //   }
+    //   return _allInputs;
+    // }
 
     public int CountRepeats()
     {
